@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            <charset>UTF-8</charset>
+            <layout class="com.dattb.info.profilebe.config.MaskingPatternLayout">
+                <maskPattern>\"password\"\s*:\s*\"(.*?)\"</maskPattern>
+                <maskPattern>\"oldPassword\"\s*:\s*\"(.*?)\"</maskPattern>
+                <maskPattern>\"newPassword\"\s*:\s*\"(.*?)\"</maskPattern>
+                <pattern>[%-4p] [%X{traceId},%X{spanId}] [%d{ISO8601,UTC}] [%thread] %c: %m%n%ex</pattern>
+            </layout>
+        </encoder>
+    </appender>
+    <root level="info">
+        <appender-ref ref="Console"/>
+    </root>
+</configuration>
