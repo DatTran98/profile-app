@@ -1,15 +1,15 @@
 package com.dattb.info.profile.filter;
 
-import io.micrometer.common.util.StringUtils;
-import jakarta.servlet.FilterChain;
-import jakarta.servlet.ServletException;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.MDC;
 import org.springframework.stereotype.Component;
+import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
+import javax.servlet.FilterChain;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 import static com.dattb.info.profile.util.Constant.TRACE_ID;
@@ -27,7 +27,7 @@ public class LoggingFilter extends OncePerRequestFilter {
         String requestId = request.getHeader(X_REQUEST_ID);
 
         long startTime = System.currentTimeMillis();
-        if (StringUtils.isNotBlank(requestId))
+        if (StringUtils.hasLength(requestId))
             MDC.put(TRACE_ID, requestId);
         else MDC.put(TRACE_ID, String.valueOf(startTime));
 

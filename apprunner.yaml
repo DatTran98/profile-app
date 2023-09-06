@@ -8,6 +8,6 @@ build:
       - echo "Compile complete."
 run:
   runtime-version: 11.0.17.8.1
-  command: java -Xms256m -jar build/libs/profile-be-0.0.1-SNAPSHOT.jar
+  command: java -Xms256m -jar build/libs/profile-0.0.1-SNAPSHOT.jar
   network:
     port: 8000
