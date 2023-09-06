@@ -1,13 +1,13 @@
-package com.dattb.info.profilebe;
+package com.dattb.info.profile;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ProfileBeApplication {
+public class ProfileApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProfileBeApplication.class, args);
+		SpringApplication.run(ProfileApplication.class, args);
 	}
 
 }

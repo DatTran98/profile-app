@@ -1,4 +1,4 @@
-package com.dattb.info.profilebe.filter;
+package com.dattb.info.profile.filter;
 
 import io.micrometer.common.util.StringUtils;
 import jakarta.servlet.FilterChain;
@@ -12,8 +12,8 @@ import org.springframework.web.filter.OncePerRequestFilter;
 
 import java.io.IOException;
 
-import static com.dattb.info.profilebe.util.Constant.TRACE_ID;
-import static com.dattb.info.profilebe.util.Constant.X_REQUEST_ID;
+import static com.dattb.info.profile.util.Constant.TRACE_ID;
+import static com.dattb.info.profile.util.Constant.X_REQUEST_ID;
 
 
 @Slf4j

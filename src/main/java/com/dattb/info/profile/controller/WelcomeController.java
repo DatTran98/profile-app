@@ -1,4 +1,4 @@
-package com.dattb.info.profilebe.controller;
+package com.dattb.info.profile.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;

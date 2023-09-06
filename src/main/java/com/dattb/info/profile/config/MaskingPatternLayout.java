@@ -1,4 +1,4 @@
-package com.dattb.info.profilebe.config;
+package com.dattb.info.profile.config;
 
 import ch.qos.logback.classic.PatternLayout;
 import ch.qos.logback.classic.spi.ILoggingEvent;
