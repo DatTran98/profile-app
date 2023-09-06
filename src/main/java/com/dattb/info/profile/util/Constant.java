@@ -1,4 +1,4 @@
-package com.dattb.info.profilebe.util;
+package com.dattb.info.profile.util;
 
 public class Constant {
     Constant() {

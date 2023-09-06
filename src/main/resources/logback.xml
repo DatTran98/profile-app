@@ -3,7 +3,7 @@
     <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
         <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
             <charset>UTF-8</charset>
-            <layout class="com.dattb.info.profilebe.config.MaskingPatternLayout">
+            <layout class="com.dattb.info.profile.config.MaskingPatternLayout">
                 <maskPattern>\"password\"\s*:\s*\"(.*?)\"</maskPattern>
                 <maskPattern>\"oldPassword\"\s*:\s*\"(.*?)\"</maskPattern>
                 <maskPattern>\"newPassword\"\s*:\s*\"(.*?)\"</maskPattern>
