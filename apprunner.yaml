@@ -4,8 +4,7 @@ build:
   commands:
     build:
       - echo "Compiling the code..."
-      - chmod +x gradlew
-      - ./gradlew bootJar
+      - gradle clean build
       - echo "Compile complete."
 run:
   runtime-version: 11.0.17.8.1
