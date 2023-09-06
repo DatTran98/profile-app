@@ -3,8 +3,12 @@ runtime: corretto11
 build:
   commands:
     build:
-      - ./gradlew clean build
+      - echo "Compiling the code..."
+      - chmod +x gradlew
+      - ./gradlew bootJar
+      - echo "Compile complete."
 run:
-  command: java -Xms256m -jar target/profile-be-0.0.1-SNAPSHOT.jar
+  runtime-version: 11.0.17.8.1
+  command: java -Xms256m -jar build/libs/profile-be-0.0.1-SNAPSHOT.jar
   network:
     port: 8000
